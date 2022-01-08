@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Kitchen</title>
+
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+
+
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><img src="logo-img.png" alt=""></a>
+
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#popular">popular</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#" id="account">Account Details</a></li>
+                <li><a href="cart.html" class="cart_icon">Cart</a>
+                    <span class="total_item">0</span>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content" data-aos="fade-right">
+            <h3>Mouthwatering Food in your Budget</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odit distinctio error corporis adipisci
+                molestias eveniet optio quaerat tempore asperiores!</p>
+            <a href="#"><button id="login" class=" login">Login</button></a>
+            <a href="#"><button id="signup" class=" signup">Sign Up</button></a>
+        </div>
+
+        <div class="image" data-aos="fade-up">
+            <img src="home-img.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image" data-aos="fade-right">
+            <img src="menu2.jpg" id="menu-img" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-left">
+            <h3>a word about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium eligendi a totam consequatur!
+                Quis minus amet iusto iure repudiandae, incidunt enim fugiat ipsa? Iure quam et quo quos quisquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint totam pariatur saepe sit nostrum
+                consequuntur, praesentium accusamus harum voluptate soluta.</p>
+            <a href="#"><button class="btn">learn more</button></a>
+        </div>
+        <div class="popupAc">
+            <div class="popupcontentAc">
+                <span class="close2">
+                    <i class="fas fa-times fa-3x"></i>
+                </span>
+                <h1>Account Details</h1>
+                <div class="account-details"></div>
+                <div id="logout"><button class="logout">Logout</button></div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popupcontent">
+                <span class="close">
+                    <i class="fas fa-times fa-3x"></i>
+                </span>
+                <form action="" id="login-form">
+                    <img src="logo-img.png" alt="" style="margin-left: 40%;
+            margin-right: 40%;
+            height: 70px;">
+                    <input class="user" id="login_email" name="email" type="text" placeholder="email">
+                    <input name="password" id="login_password" class="password" type="password" placeholder="password">
+                    <a href="#" class="btn btn-primary" href="#" role="button" style="margin: 35%;" id="loginmeup">Sign
+                        in</a>
+                   
+                </form>
+            </div>
+        </div>
+        <div class="popup1">
+            <div class="popupcontent1">
+
+                <!-- <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span >Full Name</span>
+                    <input class="details" type="text" name="name"placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span >Email</span>
+                    <input class="details" name ="email"type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span>New Password</span>
+                    <input class="details" name="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <span >Confirm Password</span>
+                    <input class="details" type="password"  placeholder="Enter your password" required>
+                </div>
+                <a href="#"  class="btn btn-primary" href="#" role="button" >Sign up</a>
+            </div>
+        </form>
+    </div>-->
+                <div id="login-box">
+                    <span class="close1">
+                        <i class="fas fa-times fa-lg"></i>
+                    </span>
+                    <div class="left">
+
+                        <h1>Sign up</h1>
+                        <form action="" id="register-form">
+                            <input type="text" id="username" name="username" placeholder="Username" />
+                            <input type="email" id="signup-email" name="email" placeholder="E-mail" required />
+                            <input type="password" id="signup-password" name="password" placeholder="Password"
+                                required />
+                            <input type="password" id="password" name="password2" placeholder="Retype password"
+                                required />
+
+                            <button class="btn btn-primary" id="signmeup" type="submit" name="signup_submit"
+                                value="Sign me up">Sign me up</button>
+                    </div>
+
+                    <!--<div class="right">
+                        <span class="loginwith">Sign in with<br />social network</span>
+
+                        <button class="social-signin facebook">Log in with facebook</button>
+                        <button class="social-signin twitter">Log in with Twitter</button>
+                        <button class="social-signin google">Log in with Google+</button>
+                    </div>-->
+                    </form>
+                    <!-- <div class="or">OR</div> -->
+                </div>
+            </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our delicious <span>menu</span> </h1>
+
+        <ul class="list" data-aos="fade-down">
+            <li class="btn" data-src="menu1.jpg">breakfast</li>
+            <li class="btn active" data-src="menu2.jpg">lunch</li>
+            <li class="btn" data-src="menu3.jpg">dinner</li>
+            <li class="btn" data-src="menu4.jpg">dessert</li>
+        </ul>
+
+        <div class="row" data-aos="fade-right">
+
+            <div class="image" data-aos="fade-left">
+                <img src="menu2.jpg" id="menu-img" alt="">
+            </div>
+
+            <div class="content">
+                <div class="info">
+                    <h3> <span>01.</span> we serve best food in the country </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
+                </div>
+                <div class="info">
+                    <h3> <span>02.</span> we serve best food in the country </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
+                </div>
+                <div class="info">
+                    <h3> <span>03.</span> we serve best food in the country </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
+                </div>
+                <div class="info">
+                    <h3> <span>04.</span> we serve best food in the country </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, vero?</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+
+        <h1 class="heading"> most <span>popular</span> food </h1>
+
+        <div class="box-container">
+
+
+            <!--<div class="box1" data-aos="fade-right">
+                <img src="product-1.jpg" alt="">
+                <h3>Chicken Wings</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs249.00</div>
+                <button class="order-btn">add to cart</button>
+            </div>
+
+            <div class="box1" data-aos="fade-left">
+                <img src="product-2.jpg" alt="">
+                <h3>Cocktails</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">RS249.00</div>
+                <a href="#"><button class="order-btn">add to cart</button></a>
+            </div>
+
+            <div class="box1" data-aos="fade-right">
+                <img src="product-3.jpg" alt="">
+                <h3>Wraps</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs 245.00</div>
+                <a href="#"><button class="order-btn">add to cart</button></a>
+            </div>
+
+            <div class="box1" data-aos="fade-left">
+                <img src="product-4.jpg" alt="">
+                <h3>Pasta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rs 245.00</div>
+                <a href="#"><button class="order-btn">add to cart</button></a>
+            </div>-->
+
+        </div>
+
+
+    </section>
+
+    <!-- popular section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> our food <span>gallery</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <img src="img1.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="img2.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="img3.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="img4.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="img5.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="img6.jpg" alt="">
+                <h3>delicious food</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!--Blogs section starts here-->
+    <section class="blogs">
+        <h1 class="heading">Our <span>Blogs</span></h1>
+        <div class="box-container">
+            <div class="blog-box">
+                <a href="Blogs/Blog 1.html"><img src="Blogs/Manchurian.jpg" alt="">
+                    <h3>Veg Manchurian Recipie</h3>
+                </a>
+                <p>Manchurian is one snack that tastes perfect either with noodles or even as a standalone snack. Crispy
+                    veggie balls soaked in thick slurry not only look appetizing but also tastes amazingly delightful.
+                </p>
+                <a href="Blogs/Blog 1.html"><button class="read-more">Read More</button></a>
+            </div>
+            <div class="blog-box">
+                <a href="Blogs/blog2.html"><img src="Blogs/Carrot Salad.jpg" alt="">
+                    <h3>Brocolli Carrot Salad</h3>
+                </a>
+                <p>There is nothing better than a salad made from fresh vegetables to enjoy as a light meal or as a
+                    precursor to the main course. Broccoli Carrot Salad makes use of two very exciting and wonderful
+                    vegetables.</p>
+                <a href="Blogs/blog2.html"><button class="read-more">Read More</button></a>
+            </div>
+            <div class="blog-box">
+                <a href="Blogs/blog3.html"><img src="Blogs/Chicken Lollipop.jpg" alt="">
+                    <h3>Chicken Lollipop Recipie</h3>
+                </a>
+                <p>Chicken lollipop is usually prepared using the middle segment of the chicken wing or thigh. The
+                    middle segment has one of the two bones removed, and the flesh on the segments is pushed to one end
+                    of the bone.</p>
+                <a href="Blogs/blog3.html"><button class="read-more">Read More </button></a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> mumbai, India 400102 </p>
+                <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +91 7344534932 </p>
+                <p> <i class="fas fa-phone"></i> +91 9935478112 </p>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit">create by <a href="#">Group 17</a> all rights reserved. </h1>
+
+    </div>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+    <!-- aos js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="module">
+        /*import { collection, getDocs } from "./firebase/firestore";
+        import { getFirestore } from "./firebase/firestore";*/
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+
+
+        import {onAuthStateChanged, signOut, getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getFirestore, getDocs, doc, addDoc, collection } from 'https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js';
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAYLlsdT9tkpu-H3wb60URjLn43v-yAiP0",
+            authDomain: "food-order-8c070.firebaseapp.com",
+            projectId: "food-order-8c070",
+            storageBucket: "food-order-8c070.appspot.com",
+            messagingSenderId: "191491800034",
+            appId: "1:191491800034:web:5af2d0afd7d8cf054a57bb"
+        };
+
+        // Initialize Firebase
+        const firebase = "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+        // Required for side-effects
+        //require("/firebase/firestore");
+
+        console.log('fhsdjf')
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app)
+
+        /*const firestore = getFirestore();
+        var food = collection(firestore, 'food-items')
+        async function addNewItem() {
+            const newDoc = await addDoc(food, {
+                image: 'http://127.0.0.1:5500/product-3.jpg',
+                name: 'pancake',
+                rating: 5,
+                pricing: 200
+            })
+        }
+        //addNewItem();
+        
+        const querySnapshot = await getDocs(collection(firestore, "food-items"));
+       
+            let items =[];
+            querySnapshot.forEach((doc) => {
+            items.push({
+                        id: doc.id,
+                        image: doc.data().image,
+                        name: doc.data().name,
+                        rating: doc.data().rating,
+                        price: doc.data().price
+                    })
+                    console.log(items);
+
+        }); */
+
+
+
+        /* function getItems() {
+            firestore.collection("items").get().then((querySnapshot) => {
+                let items = [];
+                querySnapshot.forEach((doc) => {
+                    items.push({
+                        id: doc.id,
+                        image: doc.data().image,
+                        name: doc.data().name,
+                        rating: doc.data().rating,
+                        price: doc.data().price
+                    })
+
+                });
+                console.log(items);
+            });
+        }
+
+
+        getItems() */
+
+       
+        onAuthStateChanged(auth, (user)=>{
+            if(user){
+               const uid = user.uid;
+               console.log('logged in', uid) 
+               setupUI(user)
+            }else{
+                console.log('user signed out')
+                setupUI()
+            }
+        })
+
+        document.getElementById('signmeup').addEventListener('click', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('signup-email').value
+            const password = document.getElementById('signup-password').value
+
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ...
+                    //console.log(user, 'created')
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    console.log(errorCode + errorMessage)
+                });
+
+        })
+        document.getElementById('loginmeup').addEventListener('click', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('login_email').value;
+            const password = document.getElementById('login_password').value
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    //console.log(user,"login successful")
+                })
+                .catch((error) => {
+                    const errorMessage = error.message;
+                    console.log(errorMessage);
+                });
+        })
+
+        const logout = document.querySelector('.logout')
+        logout.addEventListener('click', (e) => {
+            e.preventDefault()
+
+            signOut(auth).then(() => {
+                //console.log('Sign-out successful.')
+            }).catch((error) => {
+                // An error happened.
+            });
+        })
+        const accountDetails = document.querySelector('.account-details')
+        const setupUI = (user)=>{
+            
+            if (user){
+                const html =`
+                <div class="account-details">Logged in as ${user.email}</div>
+                `
+                accountDetails.innerHTML = html;
+            }
+            else{
+                accountDetails.innerHTML =''
+            }
+        }
+    </script>
+    <!-- <script>
+        src = "https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"
+    </script>-->
+
+
+    <!-- custom js file link  -->
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="header.js"></script>
+    <script type="module" src="cart.js"></script>
+
+    <script>
+
+        AOS.init({
+            delay: 400,
+            duration: 1000
+        })
+
+    </script>
+
+</body>
+
+</html>

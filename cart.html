@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Our Kitchen</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- aos js cdn link  -->
+    
+    <script type="module">
+        //import { initializeApp } from "firebase/app";
+        //import { getFirestore } from "firebase/firestore";
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
+        //import { getFirestore } from "https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAYLlsdT9tkpu-H3wb60URjLn43v-yAiP0",
+            authDomain: "food-order-8c070.firebaseapp.com",
+            projectId: "food-order-8c070",
+            storageBucket: "food-order-8c070.appspot.com",
+            messagingSenderId: "191491800034",
+            appId: "1:191491800034:web:5af2d0afd7d8cf054a57bb"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app)
+        //const firebase = require("firebase");
+        // Required for side-effects
+        //require("firebase/firestore");
+
+    </script>
+    
+    <script type="module" src="header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="module" src="cart.js"></script>
+
+
+    <!--<script type="module" src="script.js"></script>-->
+
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><img src="logo-img.png" alt=""></a>
+
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="index1.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#popular">popular</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="cart.html" class="cart_icon">Cart</a>
+                    <span class="total_item">0</span>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <h1>Your cart</h1>
+        <div class="container">
+            
+            <span width="10px"></span>
+        </div>
+        <div class="cart-items">
+            <div class="loading">
+                <div class="loader"></div>
+            </div>
+    <div class="cart-item">
+                <div class="cart-item-image">
+                    <img src="product-1.jpg" alt="" height="90px" width="90px">
+                </div>
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Chicken Wings</div>
+                </div>
+                <div class="cart-item-counter">
+                    <div class="chevron-left">
+                        <i class="fas fa-chevron-left fa-xs"></i>
+                    </div>
+
+                    x1
+                    <div class="chevron-right">
+                        <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+
+
+                </div>
+                <div class="cart-item-total-cost">
+                    <div class="cart-item-details">Rs 249</div>
+                </div>
+                <div class="cart-item-delete">
+                    <div class="delete">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div> 
+            <!-- <div class="cart-item">
+                <div class="cart-item-image">
+                    <img src="product-2.jpg" alt="" height="90px" width="90px">
+                </div>
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Cocktails</span></div>
+                </div>
+                <div class="cart-item-counter">
+                    <div class="chevron-left">
+                        <i class="fas fa-chevron-left fa-xs"></i>
+                    </div>
+
+                    x1
+                    <div class="chevron-right">
+                        <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+
+
+                </div>
+                <div class="cart-item-total-cost">
+                    <div class="cart-item-details">Rs 249</div>
+                </div>
+                <div class="cart-item-delete">
+                    <div class="delete">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div> -->
+            <div class="complete-order">
+                <div class="total-cost">
+                    <h3>Total Cost</h3>
+                    <div class="total-cost-number">
+                        Rs 498
+                    </div>
+                </div>
+                
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IEzvny3wZyrxEB" async> </script> </form>
+                
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map-marker-alt"></i> mumbai, India 400102 </p>
+                <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
+                <p> <i class="fas fa-phone"></i> +91 7344534932 </p>
+                <p> <i class="fas fa-phone"></i> +91 9935478112 </p>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit">create by <a href="#">Group 17</a> all rights reserved. </h1>
+
+    </div>
+    
+    <script>
+
+        AOS.init({
+            delay: 400,
+            duration: 1000
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toolszap</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index3.css">
+    <script type="text/javascript" src="script3.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+    
+    
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><!-- Your customer chat code -->
+
+<div attribution="setup_tool" class="fb-customerchat" page_id="289915328522236"></div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a href="/auth" class="navbar-brand">Toolszap</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/auth/login" class="nav-link">Members Area</a>
+                </li>
+                        </ul>
+        </div>
+    </div>
+</nav>    
+    <div class="container my-3">
+  
+        
+        <div class="row">
+                        <div class="col-sm-12 col-md-8 offset-md-2">
+                <div class="card mt-2">
+                    <div class="card-body">
+                                                <h3>Login</h3>
+<hr>
+<form action="/auth/login" class="login_form" method="post">
+    <fieldset>
+        <div class="ajax-alerts" style="display: none;"></div>
+        <!--TODO: Recaptcha-->
+        <div class="form-group">
+            <input type="text" class="form-control" name="amember_login" value="" placeholder="Username/Email" autocomplete="username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="amember_pass" placeholder="Password" autocomplete="current-password">
+        </div>
+                <input type="hidden" name="login_attempt_id" value="1633446125">
+<input type="hidden" name="_referer" value="http://tool9.toolszap.com/">
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </div>
+        <div class="form-group mb-0">
+            <p class="mb-1">Forgot password? <a href="/auth/login/?sendpass">Reset</a></p>
+            <p class="mb-0">Don't have an account? <a href="/auth/signup/">Signup</a></p>
+        </div>
+    </fieldset>
+</form>                    </div>
+                </div>
+            </div>
+                    </div><hr>
+        <footer>
+            <p class="mb-0">
+                Copyright © 2021 <a href="/">Toolszap</a>.
+            </p>
+        </footer>
+    </div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
